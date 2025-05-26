@@ -1,0 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class Trap : MonoBehaviour
+{
+    public float shootSpeed = 10f;
+    public GameObject trapPrefab;
+    public List<GameObject> traps;
+    public Vector3 trapOffset;
+    public Vector3 trapRotation;
+
+    public Camera cam;
+
+    private void Awake()
+    {
+        cam ??= Camera.main ?? GetComponent<Camera>() ?? FindFirstObjectByType<Camera>();
+    }
+
+    void OnAttack()
+    {
+        Vector3 spawnPosition = transform.position + (cam.transform.forward * trapOffset.z);
+        spawnPosition.y += trapOffset.y;
+        spawnPosition += cam.transform.right * trapOffset.x;
+
+        GameObject trap = Instantiate(trapPrefab, spawnPosition, Quaternion.Euler(trapRotation));
+        trap.GetComponentInChildren<Rigidbody>()?.AddForce(cam.transform.forward * shootSpeed);
+        traps.Add(trap);
+    }
+
+
+    void Update()
+    {
+    }
+}
