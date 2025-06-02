@@ -75,6 +75,7 @@
     <Compile Include="Assets\Project\Scripts\Saving\GameData.cs" />
     <Compile Include="Assets\Project\Scripts\GameManager.cs" />
     <Compile Include="Assets\Project\Scripts\CarShowroom.cs" />
+    <Compile Include="Assets\Project\Scripts\MonsterSpawner.cs" />
     <Compile Include="Assets\Project\Scripts\EnemyTypes\AggressiveEnemies.cs" />
     <Compile Include="Assets\Project\Scripts\Car.cs" />
     <Compile Include="Assets\Project\TutorialInfo\Scripts\Readme.cs" />

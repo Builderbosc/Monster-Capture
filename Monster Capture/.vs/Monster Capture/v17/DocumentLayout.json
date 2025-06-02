@@ -1,52 +1,56 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\",
+  "WorkspaceRootPath": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\enemytypes\\aggressiveenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\enemytypes\\aggressiveenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\statemachines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\statemachines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\chasingbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\chasingbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\chasingbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|c:\\users\\3d73fb19636c25ea\\documents\\github\\monster-capture\\monster capture\\assets\\project\\scripts\\statemachines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\statemachines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\enemytypes\\timidenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\enemytypes\\timidenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\enemytypes\\aggressiveenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\enemytypes\\aggressiveenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\3d73fb19636c25ea\\Desktop\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\saving\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadOnCollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\saving\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\saving\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\saving\\jasonsaveload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\saving\\jasonsaveload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\saving\\jasonsaveload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\saving\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\saving\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\saving\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\saving\\disableinputchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\saving\\disableinputchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\saving\\disableinputchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Monster Capture\\assets\\project\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\assets\\project\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1483929-9277-5638-7FCE-010DCD5E0430}|Assembly-CSharp.csproj|solutionrelative:assets\\project\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadOnCollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -59,29 +63,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TimidEnemies.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\EnemyTypes\\TimidEnemies.cs",
+              "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\EnemyTypes\\TimidEnemies.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\EnemyTypes\\TimidEnemies.cs",
+              "RelativeToolTip": "Assets\\Project\\Scripts\\EnemyTypes\\TimidEnemies.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T03:26:11.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StateMachines.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\StateMachines.cs",
+              "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\StateMachines.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\StateMachines.cs",
+              "RelativeToolTip": "Assets\\Project\\Scripts\\StateMachines.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA5wE8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T04:25:20.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChasingBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\ChasingBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\ChasingBehaviour.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\ChasingBehaviour.cs",
+              "RelativeToolTip": "Assets\\Project\\Scripts\\ChasingBehaviour.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T01:56:41.793Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Desktop\\PlayerController.cs",
-              "RelativeDocumentMoniker": "..\\Desktop\\PlayerController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\PlayerController.cs",
               "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Desktop\\PlayerController.cs",
-              "RelativeToolTip": "..\\Desktop\\PlayerController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T00:59:22.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ReloadTest.cs",
               "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadTest.cs",
-              "RelativeDocumentMoniker": "..\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadTest.cs",
+              "RelativeDocumentMoniker": "..\\..\\NavMesh2025.1\\Assets\\Scripts\\ReloadTest.cs",
               "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadTest.cs",
-              "RelativeToolTip": "..\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadTest.cs",
+              "RelativeToolTip": "..\\..\\NavMesh2025.1\\Assets\\Scripts\\ReloadTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T03:50:07.058Z",
@@ -89,12 +131,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "ReloadOnCollision.cs",
               "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadOnCollision.cs",
-              "RelativeDocumentMoniker": "..\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadOnCollision.cs",
+              "RelativeDocumentMoniker": "..\\..\\NavMesh2025.1\\Assets\\Scripts\\ReloadOnCollision.cs",
               "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadOnCollision.cs",
-              "RelativeToolTip": "..\\Documents\\GitHub\\NavMesh2025.1\\Assets\\Scripts\\ReloadOnCollision.cs",
+              "RelativeToolTip": "..\\..\\NavMesh2025.1\\Assets\\Scripts\\ReloadOnCollision.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T03:39:08.025Z",
@@ -102,11 +144,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AggressiveEnemies.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\EnemyTypes\\AggressiveEnemies.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\EnemyTypes\\AggressiveEnemies.cs",
               "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\EnemyTypes\\AggressiveEnemies.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\EnemyTypes\\AggressiveEnemies.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\EnemyTypes\\AggressiveEnemies.cs",
               "RelativeToolTip": "Assets\\Project\\Scripts\\EnemyTypes\\AggressiveEnemies.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,11 +156,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Project\\Scripts\\PlayerMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,27 +168,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChasingBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\ChasingBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\ChasingBehaviour.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\ChasingBehaviour.cs",
-              "RelativeToolTip": "Assets\\Project\\Scripts\\ChasingBehaviour.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T01:56:41.793Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DIsableInputChild.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\DIsableInputChild.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\DIsableInputChild.cs",
               "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\Saving\\DIsableInputChild.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\DIsableInputChild.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\DIsableInputChild.cs",
               "RelativeToolTip": "Assets\\Project\\Scripts\\Saving\\DIsableInputChild.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -154,11 +180,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Project\\Scripts\\GameManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -166,23 +192,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ScoreManager.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\ScoreManager.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\ScoreManager.cs",
               "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\Saving\\ScoreManager.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\ScoreManager.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\ScoreManager.cs",
               "RelativeToolTip": "Assets\\Project\\Scripts\\Saving\\ScoreManager.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAnwE0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAewE0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T01:06:31.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "GameData.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\GameData.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\GameData.cs",
               "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\Saving\\GameData.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\GameData.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\GameData.cs",
               "RelativeToolTip": "Assets\\Project\\Scripts\\Saving\\GameData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -190,11 +216,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "JasonSaveLoad.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\JasonSaveLoad.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\JasonSaveLoad.cs",
               "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\Saving\\JasonSaveLoad.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\JasonSaveLoad.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Saving\\JasonSaveLoad.cs",
               "RelativeToolTip": "Assets\\Project\\Scripts\\Saving\\JasonSaveLoad.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -202,23 +228,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StateMachines.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\StateMachines.cs",
-              "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\StateMachines.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\StateMachines.cs",
-              "RelativeToolTip": "Assets\\Project\\Scripts\\StateMachines.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T04:25:20.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Picture.cs",
-              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Picture.cs",
+              "DocumentMoniker": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Picture.cs",
               "RelativeDocumentMoniker": "Assets\\Project\\Scripts\\Picture.cs",
-              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Monster Capture\\Assets\\Project\\Scripts\\Picture.cs",
+              "ToolTip": "C:\\Users\\3d73fb19636c25ea\\Documents\\GitHub\\Monster-Capture\\Monster Capture\\Assets\\Project\\Scripts\\Picture.cs",
               "RelativeToolTip": "Assets\\Project\\Scripts\\Picture.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

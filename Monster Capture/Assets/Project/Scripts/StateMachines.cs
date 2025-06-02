@@ -1,5 +1,5 @@
-using System;
 using System.Collections;
+using System.Threading;
 using UnityEngine;
 
 
@@ -7,6 +7,7 @@ public class StateMachine : MonoBehaviour
 {
     public enum State
     {
+        Idle,
         Patrol,
         Chasing,
         Cornered,
@@ -20,12 +21,24 @@ public class StateMachine : MonoBehaviour
 
     public ChasingBehaviour chasingBehaviour;
 
+
+    public Vector3 home;
+    public Vector3 homeTarget;
+    public float homeRadius = 5f;
+
+    public float playerDetectionRadius = 7f;
+
+    public float timer;
+    public float timerMax;
+
     private void Awake()
     {
         chasingBehaviour = GetComponent<ChasingBehaviour>();
     }
     private void Start()
     {
+        home = transform.position;
+        homeTarget = home + new Vector3(Random.Range(-homeRadius, homeRadius), 0, Random.Range(-homeRadius, homeRadius));
         NextState();
     }
 
@@ -33,6 +46,9 @@ public class StateMachine : MonoBehaviour
     {
         switch (state)
         {
+            case State.Idle:
+                StartCoroutine(IdleState());
+                break;
             case State.Patrol:
                 StartCoroutine(PatrolState());
                 break;
@@ -54,16 +70,38 @@ public class StateMachine : MonoBehaviour
         return dotResult >= 0.95f  ;
     }
 
+    IEnumerator IdleState()
+    {
+        Debug.Log("Entering Idle State");
+        while (state == State.Idle)
+        {
+            chasingBehaviour.ChaseTarget(homeTarget, true, chaseSpeed);
+            if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(homeTarget.x, homeTarget.z)) <= 0.01f)
+            {
+                yield return new WaitForSeconds(Random.Range(0.6f, 2.2f));
+                homeTarget = home + new Vector3(Random.Range(-homeRadius, homeRadius), 0, Random.Range(-homeRadius, homeRadius));
+                chasingBehaviour.ChaseTarget(homeTarget, true, chaseSpeed);
+            }
+
+            if (Vector3.Distance(transform.position , player.transform.position) <= playerDetectionRadius)
+            {
+                state = State.Patrol;
+            }
+            yield return null;
+        }
+
+        Debug.Log("Exiting Idle State");
+        NextState();
+    }
     IEnumerator PatrolState()
     {
         Debug.Log("Entering Patrol State");
         while (state == State.Patrol)
         {
-            transform.rotation *= Quaternion.Euler(0f, 50f * Time.deltaTime, 0f);
+            chasingBehaviour.ChaseTarget(player.transform.position, true, 1.2f);
 
             Vector3 directionToPlayer = player.transform.position - transform.position;
             directionToPlayer.Normalize();
-
             float dotResult = Vector3.Dot(directionToPlayer, transform.forward);
 
             if (dotResult >= 0.95f)
@@ -82,15 +120,24 @@ public class StateMachine : MonoBehaviour
         Debug.Log("Entering Chasing State");
         while (state == State.Chasing)
         {
-            chasingBehaviour.enabled = true;
+            timer += Time.deltaTime;
+
+            chasingBehaviour.ChaseTarget(player.transform.position, chasingAggro, chaseSpeed);
             float wave = Mathf.Sin(Time.time * 20f) * 0.1f + 1f;
             float wave2 = Mathf.Cos(Time.time * 20f) * 0.1f + 1f;
             transform.localScale = new Vector3(wave, wave2, wave);
 
+            if (timer >= timerMax)
+            {
+                if (!(Vector3.Distance(transform.position, player.transform.position) <= playerDetectionRadius))
+                {
+                    state = State.Idle;
+                }
+            }
             yield return null; // Waits for a frame
         }
+        timer = 0;
         Debug.Log("Exiting Chasing State");
-        chasingBehaviour.enabled = false;
         NextState();
     }
 }
