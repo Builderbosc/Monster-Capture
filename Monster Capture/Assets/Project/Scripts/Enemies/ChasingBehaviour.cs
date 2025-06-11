@@ -1,4 +1,3 @@
-using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
 public class ChasingBehaviour : MonoBehaviour
@@ -8,12 +7,6 @@ public class ChasingBehaviour : MonoBehaviour
 
 
     private float speed;
-
-    private float ObjX;
-    private float ObjY;
-    private float ObjZ;
-
-    private Vector3 ObjTargetPos;
 
     private int ChasingIndex = 1;
     public bool isChasing = false;
@@ -27,9 +20,6 @@ public class ChasingBehaviour : MonoBehaviour
     {
         
         ChasingIndex = chasingAggro ? ChasingIndex = 1 : ChasingIndex = -1;
-        
-        
-        ObjTargetPos = new Vector3(ObjX, ObjY, ObjZ);
 
         agent.speed = Speed;
         if (chasingAggro)
@@ -48,11 +38,6 @@ public class ChasingBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isChasing)
-        {
-            
-            //transform.position += (Vector3.Normalize(ObjTargetPos) * speed * Time.deltaTime);
-            //agent.destination = transform.position;
-        }
+
     }
 }

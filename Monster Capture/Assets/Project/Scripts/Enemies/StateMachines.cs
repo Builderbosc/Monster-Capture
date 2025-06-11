@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Threading;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 
 public class StateMachine : MonoBehaviour
@@ -14,12 +15,12 @@ public class StateMachine : MonoBehaviour
     }
     public State state;
 
-    public GameObject player;
+    [HideInInspector] public GameObject player;
 
     public float chaseSpeed;
     public bool chasingAggro;
 
-    public ChasingBehaviour chasingBehaviour;
+    [HideInInspector] public ChasingBehaviour chasingBehaviour;
 
 
     public Vector3 home;
@@ -37,6 +38,12 @@ public class StateMachine : MonoBehaviour
     }
     private void Start()
     {
+        if (!player)
+        {
+            //Try to get a default target
+            player = GameObject.Find("Player");
+            chasingBehaviour = GetComponent<ChasingBehaviour>();
+        }
         home = transform.position;
         homeTarget = home + new Vector3(Random.Range(-homeRadius, homeRadius), 0, Random.Range(-homeRadius, homeRadius));
         NextState();
@@ -56,6 +63,7 @@ public class StateMachine : MonoBehaviour
                 StartCoroutine(ChasingState());
                 break;
             case State.Cornered:
+                //CorneredStateTrigger();
                 break;
             default:
                 break;
@@ -133,6 +141,12 @@ public class StateMachine : MonoBehaviour
                 {
                     state = State.Idle;
                 }
+                /*
+                else
+                {
+                    state = State.Cornered;
+                }
+                */
             }
             yield return null; // Waits for a frame
         }
@@ -140,4 +154,29 @@ public class StateMachine : MonoBehaviour
         Debug.Log("Exiting Chasing State");
         NextState();
     }
-}
+
+    /*
+    IEnumerator CorneredState()
+    {
+        timer += Time.deltaTime;
+        CorneredBehaviour();
+        yield return null;
+        if (timer >= timerMax)
+        {
+            if (!(Vector3.Distance(transform.position, player.transform.position) <= playerDetectionRadius))
+            {
+                state = State.Idle;
+            }
+            else
+            {
+                state = State.Chasing;
+            }
+        }
+    }
+
+    public virtual void CorneredBehaviour()
+    {
+
+    }
+    */
+ }

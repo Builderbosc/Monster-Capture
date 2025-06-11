@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Collections;
 using TMPro;
 using UnityEngine;
 using System.Linq;
@@ -18,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     private List<string> names = new List<string>();
     private List<int> scores = new List<int>();
     public int maxScoresCount = 10;
-    private int currentScore = 0;
+    public int currentScore = 0;
 
 
     public int CurrentScore
@@ -34,15 +33,6 @@ public class ScoreManager : MonoBehaviour
 
     public void Awake()
     {
-        if(instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(this);
-        }
-        
         HighScoreData data = JasonSaveLoad.Load();
         scores = data.scores.ToList();
         names = data.names.ToList();
@@ -52,7 +42,8 @@ public class ScoreManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void IncreaseScore(int amount)
     {
-        CurrentScore += amount;
+        currentScore += amount;
+        uiTextScore.text = "Score: " + currentScore;
     }
 
     public void OnDestroy()
@@ -71,14 +62,22 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    //Bug with destroy all children, also destroiys the score manager object
     private void DestroyAllChildren(GameObject parent)
     {
-        
         Transform[] children = GetComponentsInChildren<Transform>(true);
-        for (int i = children.Length -1; i >=0; i--)
+        for (int i = children.Length -1; i >= 0; i--)
         {
-            if (children[i] == parent) continue;
-            Destroy(children[i].gameObject);
+            if (children[i] == parent)
+            {
+                return;
+            }
+            else
+            {
+                //This line destroys the score manager object.
+                Destroy(children[i].parent);
+            }
+
         }
         
     }

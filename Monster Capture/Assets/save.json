@@ -2,11 +2,11 @@
     "scores": [
         99,
         10,
+        3,
+        2,
+        2,
+        2,
         1,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0
@@ -14,13 +14,13 @@
     "names": [
         "Andrew",
         "Tom",
+        "Good man",
+        "Meg Woman",
+        "Meg Woman",
+        "Meg Woman",
         "Steve",
         "Jim man",
         "Ghost Man",
-        "Ghost Man",
-        "Rock man",
-        "Meg",
-        "Meg",
-        "Jim"
+        "Ghost Man"
     ]
 }
