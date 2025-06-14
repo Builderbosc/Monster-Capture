@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1627194927292063146}
   - component: {fileID: 3789785168830568798}
   - component: {fileID: 1926419927383128199}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,8 @@ GameObject:
   - component: {fileID: 5087647825703198509}
   - component: {fileID: 3333692333267732582}
   - component: {fileID: 4202892451078798125}
-  m_Layer: 0
+  - component: {fileID: 5075279370685037571}
+  m_Layer: 6
   m_Name: Aggro Creature
   m_TagString: Capturable
   m_Icon: {fileID: 0}
@@ -266,6 +267,11 @@ MonoBehaviour:
   playerDetectionRadius: 7
   timer: 0
   timerMax: 8
+  timerCorneredMax: 12
+  corneredSpeed: 12
+  timeSpeedyChasing: 3
+  timeCorneredRecovery: 1
+  exaustedSpeed: 2
   aggroSpeed: 5
 --- !u!195 &4202892451078798125
 NavMeshAgent:
@@ -289,6 +295,19 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5075279370685037571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187409834589616626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e961e60baf52394a96ecf7f3f5aae6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeReduction: 15
 --- !u!1 &6280090693921854693
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +320,7 @@ GameObject:
   - component: {fileID: 8146851109692263123}
   - component: {fileID: 1360018006891099952}
   - component: {fileID: 8972893931617841592}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,8 +383,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

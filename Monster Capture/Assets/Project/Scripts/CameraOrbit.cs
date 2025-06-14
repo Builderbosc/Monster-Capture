@@ -5,6 +5,8 @@ public class CameraOrbit : MonoBehaviour
 {
     public float rotationsSpeed = 90f;
     public float distance = 5f;
+    public float yPosOffset;
+
     private Vector2 orbitAngles = new Vector2(45f, 0);
     private Vector2 input;
 
@@ -52,6 +54,7 @@ public class CameraOrbit : MonoBehaviour
 
         Vector3 lookDirection = lookRotation * Vector3.forward;
         Vector3 lookPosition = focus.position - lookDirection * distance;
+        lookPosition = new Vector3(lookPosition.x, lookPosition.y + yPosOffset, lookPosition.z);
 
         transform.SetPositionAndRotation(lookPosition, lookRotation);
 

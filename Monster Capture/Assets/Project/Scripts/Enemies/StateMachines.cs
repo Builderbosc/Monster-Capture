@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Threading;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 
 public class StateMachine : MonoBehaviour
@@ -29,9 +27,15 @@ public class StateMachine : MonoBehaviour
 
     public float playerDetectionRadius = 7f;
 
-    public float timer;
+    [HideInInspector] public float timer;
     public float timerMax;
+    public float timerCorneredMax;
 
+    public float corneredSpeed;
+    public float timeSpeedyChasing;
+    public float timeCorneredRecovery;
+    public float exaustedSpeed;
+    private float timeChasing;
     private void Awake()
     {
         chasingBehaviour = GetComponent<ChasingBehaviour>();
@@ -63,7 +67,7 @@ public class StateMachine : MonoBehaviour
                 StartCoroutine(ChasingState());
                 break;
             case State.Cornered:
-                //CorneredStateTrigger();
+                StartCoroutine(CorneredState());
                 break;
             default:
                 break;
@@ -141,12 +145,12 @@ public class StateMachine : MonoBehaviour
                 {
                     state = State.Idle;
                 }
-                /*
+                
                 else
                 {
                     state = State.Cornered;
                 }
-                */
+                
             }
             yield return null; // Waits for a frame
         }
@@ -155,28 +159,39 @@ public class StateMachine : MonoBehaviour
         NextState();
     }
 
-    /*
+
     IEnumerator CorneredState()
     {
         timer += Time.deltaTime;
-        CorneredBehaviour();
-        yield return null;
-        if (timer >= timerMax)
+        while (state == State.Cornered)
         {
-            if (!(Vector3.Distance(transform.position, player.transform.position) <= playerDetectionRadius))
+            CorneredBehaviour();
+            yield return null;
+            if (timer >= timerCorneredMax)
             {
-                state = State.Idle;
-            }
-            else
-            {
-                state = State.Chasing;
+                if (!(Vector3.Distance(transform.position, player.transform.position) <= playerDetectionRadius))
+                {
+                    state = State.Idle;
+                }
+                else
+                {
+                    state = State.Chasing;
+                }
             }
         }
     }
-
     public virtual void CorneredBehaviour()
     {
+        if (timeChasing < timeSpeedyChasing)
+        {
+            chasingBehaviour.ChaseTarget(player.transform.position, chasingAggro, corneredSpeed);
+            timeChasing += Time.deltaTime;
+        }
 
+        if (timeChasing > timeSpeedyChasing)
+        {
+            chasingBehaviour.ChaseTarget(player.transform.position, chasingAggro, exaustedSpeed);
+            timeChasing -= Time.deltaTime;
+        }
     }
-    */
  }

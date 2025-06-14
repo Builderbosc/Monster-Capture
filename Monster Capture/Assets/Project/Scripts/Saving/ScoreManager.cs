@@ -62,20 +62,18 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    //Bug with destroy all children, also destroiys the score manager object
     private void DestroyAllChildren(GameObject parent)
     {
-        Transform[] children = GetComponentsInChildren<Transform>(true);
+        Transform[] children = parent.GetComponentsInChildren<Transform>(true);
         for (int i = children.Length -1; i >= 0; i--)
         {
-            if (children[i] == parent)
+            if (children[i] == parent.transform)
             {
                 return;
             }
             else
             {
-                //This line destroys the score manager object.
-                Destroy(children[i].parent);
+                Destroy(children[i].gameObject);
             }
 
         }
@@ -110,6 +108,7 @@ public class ScoreManager : MonoBehaviour
             names.Add(name);
         }
     }
+
 
     public void CleanUpHighScores()
     {

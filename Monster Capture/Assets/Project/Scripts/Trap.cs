@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Trap : MonoBehaviour
 {
@@ -12,26 +9,37 @@ public class Trap : MonoBehaviour
     public Vector3 trapOffset;
     public Vector3 trapRotation;
 
+    public GameObject debugObj;
+
     public Camera cam;
 
     private void Awake()
     {
         cam ??= Camera.main ?? GetComponent<Camera>() ?? FindFirstObjectByType<Camera>();
     }
-
-    void OnAttack()
+    public void OnAttack()
     {
-        Vector3 spawnPosition = transform.position + (cam.transform.forward * trapOffset.z);
-        spawnPosition.y += trapOffset.y;
-        spawnPosition += cam.transform.right * trapOffset.x;
+        Vector3 camForward = cam.transform.forward;
+        camForward.y = 0f;
 
-        GameObject trap = Instantiate(trapPrefab, spawnPosition, Quaternion.Euler(trapRotation));
-        trap.GetComponentInChildren<Rigidbody>()?.AddForce(cam.transform.forward * shootSpeed);
+        camForward.Normalize();
+
+        Vector3 spawnPosition = transform.position;
+        spawnPosition.y += trapOffset.y;
+        spawnPosition += (trapOffset.z * camForward);
+
+        
+        debugObj.transform.position = spawnPosition;
+
+        GameObject trap = Instantiate(trapPrefab, spawnPosition, Quaternion.Euler(transform.localEulerAngles = new Vector3(0, cam.transform.localEulerAngles.y, 0)));
+
+        var spawmDir = new Vector3(cam.transform.forward.x, 0, cam.transform.forward.z).normalized; 
+        Vector3.Normalize(spawmDir);
+        spawmDir.y = 0f;
+
+        Debug.Log(spawmDir);
+        Debug.Log(spawmDir * shootSpeed);
+        trap.GetComponentInChildren<Rigidbody>()?.AddForce(spawmDir * shootSpeed);
         traps.Add(trap);
     }
-
-
-    void Update()
-    {
-    }
-}
+ }

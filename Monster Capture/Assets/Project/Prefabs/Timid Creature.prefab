@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4132195598922732308}
   - component: {fileID: 2052674425730445874}
   - component: {fileID: 5992530443460470994}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285235618
-  m_fontColor: {r: 0.63529414, g: 0.5058824, b: 0.41960788, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 3292582399223144554}
   - component: {fileID: 706414989352911763}
   - component: {fileID: 659026116760719612}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,8 @@ GameObject:
   - component: {fileID: 4350537642274753421}
   - component: {fileID: 2788884034746794908}
   - component: {fileID: 3688178424875981187}
-  m_Layer: 0
+  - component: {fileID: 425726923608766485}
+  m_Layer: 6
   m_Name: Timid Creature
   m_TagString: Capturable
   m_Icon: {fileID: 0}
@@ -416,6 +417,11 @@ MonoBehaviour:
   playerDetectionRadius: 7
   timer: 0
   timerMax: 8
+  timerCorneredMax: 10
+  corneredSpeed: 0
+  timeSpeedyChasing: 2
+  timeCorneredRecovery: 3
+  exaustedSpeed: 15
   TimidSpeed: 8
 --- !u!195 &3688178424875981187
 NavMeshAgent:
@@ -439,3 +445,16 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &425726923608766485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185704703969219763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e961e60baf52394a96ecf7f3f5aae6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeReduction: 5

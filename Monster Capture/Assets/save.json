@@ -1,26 +1,30 @@
 {
     "scores": [
-        99,
-        10,
+        13,
+        13,
+        12,
+        11,
+        9,
+        7,
+        6,
+        5,
+        4,
         3,
         2,
-        2,
-        2,
-        1,
-        0,
-        0,
-        0
+        1
     ],
     "names": [
+        "Jerrin",
+        "Idea man",
         "Andrew",
-        "Tom",
-        "Good man",
-        "Meg Woman",
-        "Meg Woman",
-        "Meg Woman",
-        "Steve",
-        "Jim man",
-        "Ghost Man",
-        "Ghost Man"
+        "RockMan",
+        "Meg",
+        "IdeaMan",
+        "Gamer",
+        "Terry",
+        "Gamer",
+        "Gaiming",
+        "Carl",
+        "Jimmy"
     ]
 }

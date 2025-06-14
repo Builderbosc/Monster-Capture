@@ -26,6 +26,10 @@ public class EnemySpawner : MonoBehaviour
     [Tooltip("The ammount of Timid Enemies spawned by the start of the game.")]
     [SerializeField] private int TimidEnemiesMax;
 
+
+
+
+
     private int currentAgroCount;
     private int currentTimidCount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,15 +40,18 @@ public class EnemySpawner : MonoBehaviour
             //Try to get a default textManager
             playerPos = GameObject.FindGameObjectWithTag("Player");
         }
-        for (int i = 0; i <= AgroEnemiesMax; i++)
+        for (int i = 0; i < AgroEnemiesMax; i++)
         {
             SpawnEnemy(true);
         }
 
-        for (int i = 0;i <= TimidEnemiesMax;i++)
+        for (int i = 0;i < TimidEnemiesMax;i++)
         {
             SpawnEnemy(false);
         }
+
+        currentAgroCount = FindObjectsByType(typeof(AggressiveEnemies), FindObjectsSortMode.None).Length;
+        currentTimidCount = FindObjectsByType(typeof(TimidEnemies), FindObjectsSortMode.None).Length;
     }
 
     // Update is called once per frame
@@ -54,13 +61,30 @@ public class EnemySpawner : MonoBehaviour
         {
             SpawnEnemy(isAgro);
         }
+        if(currentTimidCount < TimidEnemiesMax)
+        {
+            SpawnEnemy(false);
+            Debug.Log(FindObjectsByType(typeof(AggressiveEnemies), FindObjectsSortMode.None).Length);
+        }
 
+        if(currentAgroCount < AgroEnemiesMax)
+        {
+            SpawnEnemy(true);
+            Debug.Log(FindObjectsByType(typeof(TimidEnemies), FindObjectsSortMode.None).Length);
+        }
 
     }
 
     public void SpawnEnemy(bool isEnemyAgro)
     {
-        spawnPoint = new Vector3(Random.Range(-xRange, xRange), 1, Random.Range(-zRange, zRange));        if(isEnemyAgro)
+        spawnPoint = new Vector3(Random.Range(-xRange, xRange), 1, Random.Range(-zRange, zRange));        
+        
+        while (Vector3.Distance(spawnPoint, playerPos.transform.position) < 20)
+        {
+            spawnPoint = new Vector3(Random.Range(-xRange, xRange), 1, Random.Range(-zRange, zRange));
+        }
+
+        if(isEnemyAgro)
         {
             Instantiate(AgroEnemy, spawnPoint, new Quaternion(0, 0, 0, 0));
         }

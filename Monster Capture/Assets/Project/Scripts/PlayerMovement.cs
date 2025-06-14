@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     Vector2 input;
 
+    private Trap trapSpawner;
+
+
     private float currentSpeed;
 
     [Tooltip("The Strength of the Player's Jump.")]
@@ -19,18 +22,30 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float runSpeed = 60;
     [Tooltip("The Speed the player falls.")]
     [SerializeField] private float gravity = 10;
+    [Tooltip("The cooldown between spawning a trap.")]
+    [SerializeField] private float trapSpawnCooldown = 0.8f;
+
+    private float currentTrapCooldown;
+
     bool isGrounded;
+
+
 
     private CapsuleCollider capCol;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        trapSpawner = GetComponent<Trap>();
         capCol = GetComponent<CapsuleCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(currentTrapCooldown  <= trapSpawnCooldown)
+        {
+            currentTrapCooldown += Time.deltaTime;
+        }
         currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
 
         Vector2 currentInput = new Vector2();
@@ -52,6 +67,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             Jump();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && currentTrapCooldown >= trapSpawnCooldown)
+        {
+            trapSpawner.OnAttack();
+            currentTrapCooldown = 0;
         }
     }
 
