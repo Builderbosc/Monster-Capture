@@ -9,8 +9,6 @@ public class Trap : MonoBehaviour
     public Vector3 trapOffset;
     public Vector3 trapRotation;
 
-    public GameObject debugObj;
-
     public Camera cam;
 
     private void Awake()
@@ -28,14 +26,9 @@ public class Trap : MonoBehaviour
         spawnPosition.y += trapOffset.y;
         spawnPosition += (trapOffset.z * camForward);
 
-        
-        debugObj.transform.position = spawnPosition;
-
         GameObject trap = Instantiate(trapPrefab, spawnPosition, Quaternion.Euler(transform.localEulerAngles = new Vector3(0, cam.transform.localEulerAngles.y, 0)));
 
         var spawmDir = new Vector3(cam.transform.forward.x, 0, cam.transform.forward.z).normalized; 
-        Vector3.Normalize(spawmDir);
-        spawmDir.y = 0f;
 
         Debug.Log(spawmDir);
         Debug.Log(spawmDir * shootSpeed);

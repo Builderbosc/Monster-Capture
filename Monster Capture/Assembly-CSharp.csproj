@@ -89,6 +89,7 @@
     <Compile Include="Assets\Project\Scripts\Attack\TimeReductionAttacker.cs" />
     <Compile Include="Assets\Project\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Project\Scripts\Enemies\EnemyTypes\AggressiveEnemies.cs" />
+    <Compile Include="Assets\Project\Scripts\PlayerCooldownUI.cs" />
     <Compile Include="Assets\Project\Scripts\Trap.cs" />
     <Compile Include="Assets\Project\Scripts\Enemies\EnemySpawner.cs" />
   </ItemGroup>

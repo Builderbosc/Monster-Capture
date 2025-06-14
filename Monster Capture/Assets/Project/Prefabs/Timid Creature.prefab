@@ -414,13 +414,13 @@ MonoBehaviour:
   home: {x: 0, y: 0, z: 0}
   homeTarget: {x: 0, y: 0, z: 0}
   homeRadius: 5
-  playerDetectionRadius: 7
+  playerDetectionRadius: 22
   timer: 0
   timerMax: 8
   timerCorneredMax: 10
-  corneredSpeed: 0
-  timeSpeedyChasing: 2
-  timeCorneredRecovery: 3
+  corneredSpeed: 18
+  timeSpeedyChasing: 4
+  timeCorneredRecovery: 1.2
   exaustedSpeed: 15
   TimidSpeed: 8
 --- !u!195 &3688178424875981187
@@ -433,7 +433,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 8.47
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

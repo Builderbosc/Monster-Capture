@@ -94,4 +94,9 @@ public class PlayerMovement : MonoBehaviour
     {
         return Physics.Raycast(transform.position, Vector3.down, capCol.height / 2f + 0.01f);
     }
+
+    public float GetCooldownPercent()
+    {
+        return currentTrapCooldown / trapSpawnCooldown;
+    }
 }

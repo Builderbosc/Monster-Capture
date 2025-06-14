@@ -264,13 +264,13 @@ MonoBehaviour:
   home: {x: 0, y: 0, z: 0}
   homeTarget: {x: 0, y: 0, z: 0}
   homeRadius: 5
-  playerDetectionRadius: 7
+  playerDetectionRadius: 18
   timer: 0
   timerMax: 8
   timerCorneredMax: 12
-  corneredSpeed: 12
+  corneredSpeed: 15
   timeSpeedyChasing: 3
-  timeCorneredRecovery: 1
+  timeCorneredRecovery: 0.6
   exaustedSpeed: 2
   aggroSpeed: 5
 --- !u!195 &4202892451078798125

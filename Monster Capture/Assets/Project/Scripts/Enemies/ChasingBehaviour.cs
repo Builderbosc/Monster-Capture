@@ -33,11 +33,4 @@ public class ChasingBehaviour : MonoBehaviour
             agent.destination = transform.position + directionAwayFromPlayer;
         }
     }
-
-    
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
