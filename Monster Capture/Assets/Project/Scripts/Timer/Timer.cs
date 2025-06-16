@@ -29,7 +29,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timerCurrent > 0)
+        if (timerCurrent >= 0)
         {
             timerCurrent -= Time.deltaTime;
         }

@@ -81,7 +81,7 @@ public class ScoreManager : MonoBehaviour
     }
     public void AddHighScore(int score)
     {
-        string[] possibleNames = new[] { "Jim", "Jim man", "Idea man", "Good man", "Soup man", "Ghost Man", "Hat man", "Rock man","Meg","Meg Woman","Bad Man" };
+        string[] possibleNames = new[] { "Jim", "JimMan", "IdeaMan", "GoodMan", "SoupMan", "GhostMan", "HatMan", "RockMan","Meg","MegWoman","BadMan" };
         string randomName = possibleNames[Random.Range(0, possibleNames.Length)];
 
         AddHighScore(randomName, score);

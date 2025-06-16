@@ -5,6 +5,8 @@ public class TimerUI : MonoBehaviour
 {
     [SerializeField] private Timer timer;
 
+    [SerializeField] private CameraOrbit cameraOrbit;
+
     [SerializeField] private Image timerBar;
 
     [SerializeField] private TMP_Text timerText;
@@ -20,7 +22,7 @@ public class TimerUI : MonoBehaviour
         timerText.text = timer.GetTimeText();
         if (timer.TimerFinish())
         {
-            Cursor.lockState = CursorLockMode.None;
+            cameraOrbit.gameObject.SetActive(false);
             losePannel.SetActive(true);
             player.SetActive(false);
         }

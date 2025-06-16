@@ -2008,6 +2008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 863211879}
+  cameraOrbit: {fileID: 330585548}
   timerBar: {fileID: 702270804}
   timerText: {fileID: 628787115}
   player: {fileID: 2043725376}

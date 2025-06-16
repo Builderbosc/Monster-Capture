@@ -1,0 +1,29 @@
+How to play!
+
+
+Gameplay and Goals:
+Run around a big open area, trying to catch as many monsters as possible!
+There are two types of monsters:
+
+Aggressive: Enemies that chase down the player and deal large damage when under contacted.
+
+Passive: Enemies that run away from the player and deal only small amounts of damage.
+
+There are four states an AI can be in:
+
+Idle: Wanders around its origin.
+Patrol: a short state for when the AI notices the player but doesn't see them.
+Chasing: The state the AI is in, when running towards/away from the player.
+Cornered: Same as chasing, but faster. However, the Ai sometimes gets tired and needs to stop briefly.
+
+
+
+Controls:
+
+W, A, S, D: Moves the character in the direction relative to the camera.
+TAB: ends a run early, allowing you to access the  title screen/ quit the game/ restart a bad run.
+Left Click: if not on cooldown, a trap is shot in the direction you are facing.
+
+UI navigation:
+
+almost all on-screen buttons can be directly interacted with by keyboard and mouse.
